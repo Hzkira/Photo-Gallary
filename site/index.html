@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A personal photography journal of trips, celebrations, and time with friends.">
+    <title>Home | The Weekend Roll</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/gallery.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="wordmark" href="./index.html"><span class="mark" aria-hidden="true">✳</span> The Weekend Roll</a>
+            <nav aria-label="Main">
+            <a href="./index.html" aria-current="page">Home</a>
+            <a href="./galleries.html">Galleries</a>
+            <a href="./favorites.html">Favorites</a>
+            <a href="./about.html">About</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+        <div class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">A personal photo journal</p>
+                <h1>The Weekend<br>Roll<span class="period">.</span></h1>
+                <p>Trips, celebrations, and ordinary days with friends. A place to keep the photos worth coming back to.</p>
+                <a class="button" href="./galleries.html">Browse galleries</a>
+            </div>
+            <div class="hero-image" id="hero-photo">
+                <p>Trips <span aria-hidden="true">/</span> Celebrations <span aria-hidden="true">/</span> Gatherings</p>
+            </div>
+        </div>
+        <section class="recent">
+            <div class="section-heading">
+                <h2>From the roll</h2>
+                <a href="./favorites.html">See favorites</a>
+            </div>
+            <div data-gallery="home" data-empty="The first photos will appear here.">
+                <p class="empty">Loading photos…</p>
+            </div>
+            <noscript><p>Enable JavaScript to browse the photos.</p></noscript>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>The Weekend Roll <span aria-hidden="true">/</span> A personal photo journal</p>
+            <a href="./photo-note.html">Add a photo note</a>
+        </div>
+    </footer>
+    <dialog id="photo-viewer" aria-labelledby="viewer-title">
+    <form method="dialog"><button class="button close" autofocus>Close photo</button></form>
+    <img alt="">
+    <h2 id="viewer-title"></h2>
+    <p></p>
+</dialog>
+</body>
+</html>

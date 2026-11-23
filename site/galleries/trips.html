@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A personal photography journal of trips, celebrations, and time with friends.">
+    <title>Trips | The Weekend Roll</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/gallery.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="wordmark" href="../index.html"><span class="mark" aria-hidden="true">✳</span> The Weekend Roll</a>
+            <nav aria-label="Main">
+            <a href="../index.html">Home</a>
+            <a href="../galleries.html">Galleries</a>
+            <a href="../favorites.html">Favorites</a>
+            <a href="../about.html">About</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+        <div class="page-intro">
+            <a href="../galleries.html">All galleries</a>
+            <h1>Trips<span class="period">.</span></h1>
+            <p>Travel, outings, and the places we stopped along the way.</p>
+        </div>
+        <div data-gallery="trips" data-empty="Photos from trips will appear here.">
+            <p class="empty">Loading photos…</p>
+        </div>
+        <noscript><p>Enable JavaScript to browse the photos.</p></noscript>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>The Weekend Roll <span aria-hidden="true">/</span> A personal photo journal</p>
+            <a href="../photo-note.html">Add a photo note</a>
+        </div>
+    </footer>
+    <dialog id="photo-viewer" aria-labelledby="viewer-title">
+    <form method="dialog"><button class="button close" autofocus>Close photo</button></form>
+    <img alt="">
+    <h2 id="viewer-title"></h2>
+    <p></p>
+</dialog>
+</body>
+</html>

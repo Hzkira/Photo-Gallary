@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A personal photography journal of trips, celebrations, and time with friends.">
+    <title>Add a photo note | The Weekend Roll</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/photo-note.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="wordmark" href="./index.html"><span class="mark" aria-hidden="true">✳</span> The Weekend Roll</a>
+            <nav aria-label="Main">
+            <a href="./index.html">Home</a>
+            <a href="./galleries.html">Galleries</a>
+            <a href="./favorites.html">Favorites</a>
+            <a href="./about.html">About</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+        <div class="page-intro">
+            <h1>Add a photo note<span class="period">.</span></h1>
+            <p>Download a note to save next to a photo in your GitHub repository.</p>
+        </div>
+        <form class="panel note-form" id="photo-note">
+            <div class="field">
+                <label for="filename">Photo filename (required)</label>
+                <input id="filename" name="filename" type="text" required aria-describedby="filename-help" maxlength="240">
+                <p id="filename-help" class="hint">Include the extension and match the spelling and capitalization, for example <code>River Walk.JPG</code>.</p>
+            </div>
+            <div class="field">
+                <label for="alt">Image description (required)</label>
+                <input id="alt" name="alt" type="text" required maxlength="300" aria-describedby="alt-help">
+                <p id="alt-help" class="hint">Describe what is visible for someone who cannot see the photo.</p>
+            </div>
+            <div class="field-pair">
+                <div class="field">
+                    <label for="title">Display title</label>
+                    <input id="title" name="title" type="text" maxlength="120">
+                </div>
+                <div class="field">
+                    <label for="date">Photo date</label>
+                    <input id="date" name="date" type="date" min="0001-01-01" max="9999-12-31">
+                </div>
+            </div>
+            <div class="field">
+                <label for="caption">Caption or comment</label>
+                <textarea id="caption" name="caption" rows="4" maxlength="600"></textarea>
+            </div>
+            <div class="checkbox">
+                <input id="favorite" name="favorite" type="checkbox">
+                <label for="favorite">Show on the Favorites page</label>
+            </div>
+            <button class="button" type="submit">Download photo note</button>
+            <p id="note-status" role="status"></p>
+            <noscript><p>Enable JavaScript to download a photo note.</p></noscript>
+        </form>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>The Weekend Roll <span aria-hidden="true">/</span> A personal photo journal</p>
+            <a href="./photo-note.html" aria-current="page">Add a photo note</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
